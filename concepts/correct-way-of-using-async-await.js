@@ -1,3 +1,20 @@
+//AWAIT ONLY WORKS INSIDE ASYNC FUNCTION 
+const wes = await axios.get("https://swapi.co/api/people/1");
+console.log(wes);
+// wont work
+
+you should be doing something like
+async function getData(){
+	const wes = await axios.get("https://swapi.co/api/people/1");
+	console.log(wes);
+}
+
+
+
+
+
+
+
 const getDetails = async function() {
 	const wes = await axios.get("https://swapi.co/api/people/1");
 	const scot = await axios.get("https://swapi.co/api/people/2");
