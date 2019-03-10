@@ -19,3 +19,11 @@ while(true){
   }
   console.log(entry.value);
 }
+
+
+console.log("*********************************************************************");
+
+map.forEach((value, key, entry)=>{
+  console.log(key, value, entry)
+  console.log("\n\n\n\n")
+})
