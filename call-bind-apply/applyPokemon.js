@@ -15,4 +15,6 @@ var pokemonEatingHabbits = function(snack1, snack2){
 
 
 
+// First parameter defines the scope of the function and the second one provides the parameter. So its a way of attaching
+// functionality to object
 pokemonEatingHabbits.apply(object, ["cheeze", "onions"]);
