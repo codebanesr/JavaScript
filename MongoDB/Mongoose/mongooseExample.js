@@ -37,7 +37,9 @@ async function saveCourse(){
 
 
 async function getCourses(){
-  let courses = Course.find({name: "Mosh", isPublished: true});
+  //This is not a native mongodb query and i dont think it 
+  //   will work there in mongo shell as such
+  let courses = Course.find({name: "Mosh", isPublished: true}).limit(10).sort({name: 1}).select({name: 1, tags: 1});
   console.log(courses);
 }
 
