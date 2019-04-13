@@ -16,7 +16,7 @@ const Course = mongoose.model('Course', courseSchema);
 
 
 
-//This is like an object that can be pushed into the database
+//This is like an object that can be pushed into the database, in mongodb this is called a document
 const course = new Course({
   name: "Node.js course",
   author: "Shanur",
