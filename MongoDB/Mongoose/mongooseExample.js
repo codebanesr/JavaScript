@@ -41,6 +41,7 @@ async function getCourses(){
   //   will work there in mongo shell as such
   let courses = Course
      //     .find({name: "Mosh", isPublished: true})
+     //     .find({author: /^Mosh/});   //using regex to find all documents where authors name starts with Mosh       
     .find()
     .or([{author: "Mosh"}, {isPublished: true}])
     .limit(10).sort({name: 1})
