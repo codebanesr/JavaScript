@@ -34,4 +34,12 @@ async function saveCourse(){
   console.log(result);
 }
 
-saveCourse();
+
+
+async function getCourses(){
+  let courses = Course.find({name: "Mosh", isPublished: true});
+  console.log(courses);
+}
+
+//saveCourse();
+getCourses();
