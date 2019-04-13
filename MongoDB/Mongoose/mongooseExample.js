@@ -33,3 +33,5 @@ async function saveCourse(){
   let result = await course.save();
   console.log(result);
 }
+
+saveCourse();
