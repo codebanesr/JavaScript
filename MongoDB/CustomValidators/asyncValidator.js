@@ -28,3 +28,12 @@ var userSchema = new mongoose.Schema({
     message: "this will replace the value of message in callback"
   }
 })
+
+
+var User = db.model('user', userSchema);
+var user = new User();
+user.name = "Shanur";
+user.phone = "square";
+
+var errors = user.validateSync();
+// or use an async validator
