@@ -24,6 +24,7 @@ var userSchema = new mongoose.Schema({
           callback(false, message);
         }, 10)
       }
-    }
+    },
+    message: "this will replace the value of message in callback"
   }
 })
