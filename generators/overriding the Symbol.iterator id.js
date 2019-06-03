@@ -46,6 +46,10 @@ let rangeGen = {
   // everytime you call a generator it gives you {value: val, next: false}
   // dont let the for loop distract you from the fact that this loop will not just go on
   // it will pause after every single call, after returning a value
+  
+//   Another important observation is that you dont have to return anything in the symbol.iterator function because it is
+//   marked as generator, and generator functions always return a generator on which you can call a next. or to say generator 
+//   functions always return an iterable
   *[Symbol.iterator]() {
     for(let i=this.current; i<=this.end; i++){
       yield(i);
